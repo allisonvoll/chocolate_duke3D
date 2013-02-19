@@ -1,3 +1,6 @@
+*.a
+*.o
+*.dep
 *.sdf
 *.suo
 _UpgradeReport_Files
