@@ -8068,7 +8068,7 @@ void findGRPToUse(char * groupfilefullpath){
     {
         
         
-        if (dukeGRP_Match(dirEntry->d_name,dirEntry->d_reclen))
+        if (dukeGRP_Match(dirEntry->d_name,strlen(dirEntry->d_name)))
         {
             sprintf(groupfilefullpath,"%s",dirEntry->d_name);
             return;
