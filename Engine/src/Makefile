@@ -1,9 +1,9 @@
 CC=gcc
-CFLAGS=-Wall -O2 -DPLATFORM_UNIX
+CFLAGS=-Wall -O2 -D_GNU_SOURCE -DPLATFORM_UNIX -fPIC
 LDFLAGS=`sdl-config --static-libs` -shared
 INCLUDE=-Ienet/include/ `sdl-config --cflags`
 SRCS=cache.c display.c draw.c dummy_multi.c engine.c \
-	fixedPoint_math.c network.c tiles.c
+	filesystem.c fixedPoint_math.c network.c tiles.c
 OBJS=$(SRCS:.c=.o)
 DEPS=$(SRCS:.c=.dep)
 TARGET=libengine.so

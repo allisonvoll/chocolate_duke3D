@@ -8,12 +8,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include "platform.h"
+
 #include <fcntl.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include "platform.h"
+
 #include "display.h"
 
 #include "fixedPoint_math.h"
